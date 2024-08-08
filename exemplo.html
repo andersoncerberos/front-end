@@ -3,46 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela com Múltiplos Cabeçalhos</title>
+    <title>Formulário de Usuários</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        body {
+            font-family: Arial, sans-serif;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin: 0 10px 0 0;
+        }
+
+        .gender-container,
+        .select-container {
+            margin-bottom: 10px;
+        }
+
+        .hobbies-container {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        .buttons input {
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Usuários</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
 
-<h1>Tabela com Múltiplos Cabeçalhos em Uma Célula</h1>
-<table>
-    <tr>
-        <th>Nome</th>
-        <th colspan="2">Contatos</th>
-        <th colspan="3">Endereço</th>
-    </tr>
-    <tr>
-        <td>Anderson</td>
-        <td>
-            <div>Email: anderson@example.com</div>
-            <div>Telefone: (11) 1234-5678</div>
-        </td>
-        <td>Rua A, Cidade X</td>
-    </tr>
-    <tr>
-        <td>Carlos</td>
-        <td>
-            <p>Email: carlos@example.com</p>
-            <p>Telefone: (21) 8765-4321</p>
-            <p>WhatsApp: (21) 91234-5678</p>
-        </td>
-        <td>Rua B, Cidade Y</td>
-    </tr>
-</table>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone"><br>
 
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha"><br>
+
+            <div class="gender-container">
+                <label>Sexo:</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div class="select-container">
+                <label for="uf">UF:</label>
+                <select id="uf" name="uf">
+                    <option value="">Selecione</option>
+                    <!-- Adicione mais opções aqui -->
+                </select><br>
+
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade">
+                    <option value="">Selecione</option>
+                    <!-- Adicione mais opções aqui -->
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Hobbies</legend>
+                <div class="hobbies-container">
+                    <input type="checkbox" id="musica" name="hobbies" value="musica">
+                    <label for="musica">Música</label><br>
+
+                    <input type="checkbox" id="futebol" name="hobbies" value="futebol">
+                    <label for="futebol">Futebol</label><br>
+
+                    <input type="checkbox" id="artes" name="hobbies" value="artes">
+                    <label for="artes">Artes</label><br>
+
+                    <input type="checkbox" id="jogos" name="hobbies" value="jogos">
+                    <label for="jogos">Jogos</label><br>
+
+                    <input type="checkbox" id="cozinhar" name="hobbies" value="cozinhar">
+                    <label for="cozinhar">Cozinhar</label>
+                </div>
+            </fieldset>
+
+            <label for="observacao">Observação:</label>
+            <textarea id="observacao" name="observacao"></textarea><br>
+
+            <div class="buttons">
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+                <input type="button" value="Voltar" onclick="history.back()">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
