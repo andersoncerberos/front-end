@@ -10,6 +10,7 @@
         .text-box {
             height: 10px;
         }
+
         textarea {
             width: 100%;
             height: 100px;
@@ -18,71 +19,72 @@
         }
     </style>
 </head>
+<form>
 
-<body>
-    <div><a href="file:///C:/Users/ander/.vscode/front-end/indrotucao.html">Pagina Principal</a></div>
-    <div><a href="file:///C:/Users/ander/.vscode/front-end/tabela.html">Tabela</a></div>
-    <h1>Cadastro</h1>
+    <body>
+        <div><a href="file:///C:/Users/ander/.vscode/front-end/indrotucao.html">Pagina Principal</a></div>
+        <div><a href="file:///C:/Users/ander/.vscode/front-end/tabela.html">Tabela</a></div>
+        <h1>Cadastro</h1>
 
-    <div>nome:<input type="text" size="20" class="text-box"></div>
-    <div>telefone:<input type="text" size="20" class="text-box"></div>
-    <div>email:<input type="text" size="20" class="text-box"></div>
-    <div>senha:<input type="text" size="20" class="text-box"></div>
-    <div class="gender-container">
-        <label>Sexo:</label>
-        <input type="radio" id="masculino" name="sexo" value="masculino">
-        <label for="masculino">Masculino</label>
-        <input type="radio" id="feminino" name="sexo" value="feminino">
-        <label for="feminino">Feminino</label>
-    </div>
-    <div class="select-container">
-        <label for="uf">UF:</label>
-        <select id="uf" name="uf">
-            <option value="">Selecione</option>
-            <option value="DF">DF</option>
-            <option value="sp">SP</option>
-            <option value="CE">CE</option>
-            <option value="PI">PI</option>
-
-        </select><br>
-
-        <label for="cidade">Cidade:</label>
-        <select id="cidade" name="cidade">
-            <option value="">Selecione</option>
-            <option value="BRASILIA">BRASILIA</option>
-            <option value="SAO PAULO">SAO PAULO</option>
-            <option value="CEARA">CEARA</option>
-            <option value="PIAUI">PIAUI</option>
-
-        </select>
-    </div>
-    <fieldset>
-        <legend>Hobbies</legend>
-        <div class="hobbies-container">
-            <input type="checkbox" id="musica" name="hobbies" value="musica">
-            <label for="musica">Música</label><br>
-
-            <input type="checkbox" id="futebol" name="hobbies" value="futebol">
-            <label for="futebol">Futebol</label><br>
-
-            <input type="checkbox" id="artes" name="hobbies" value="artes">
-            <label for="artes">Artes</label><br>
-
-            <input type="checkbox" id="jogos" name="hobbies" value="jogos">
-            <label for="jogos">Jogos</label><br>
-
-            <input type="checkbox" id="cozinhar" name="hobbies" value="cozinhar">
-            <label for="cozinhar">Cozinhar</label>
+        <label for = "nome">nome:</label><input type="text" size="20" class="text-box"><br/>
+        <label for = "telefone">telefone:</label><input type="text" size="20" class="text-box"><br/>
+        <label for = "email">email:</label><input type="text" size="20" class="text-box"><br/>
+        <label for = "senha">senha:</label><input type="password" size="20" class="text-box"><br/>
+        <div class="gender-container">
+            <label>Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
         </div>
-    </fieldset>
-    <label for="observacao">Observação:</label>
-    <textarea id="observacao" name="observacao"></textarea><br>
+        <div class="select-container">
+            <label for="uf">UF:</label>
+            <select id="uf" name="uf">
+                <option value="">Selecione</option>
+                <option value="DF">DF</option>
+                <option value="sp">SP</option>
+                <option value="CE">CE</option>
+                <option value="PI">PI</option>
 
-    <div class="buttons">
-        <input type="submit" value="Salvar">
-        <input type="reset" value="Limpar">
-        <input type="button" value="Voltar" onclick="history.back()">
+            </select><br>
 
+            <label for="cidade">Cidade:</label>
+            <select id="cidade" name="cidade">
+                <option value="">Selecione</option>
+                <option value="BRASILIA">BRASILIA</option>
+                <option value="SAO PAULO">SAO PAULO</option>
+                <option value="CEARA">CEARA</option>
+                <option value="PIAUI">PIAUI</option>
+
+            </select>
+        </div>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <div class="hobbies-container">
+                <input type="checkbox" id="musica" name="hobbies" value="musica">
+                <label for="musica">Música</label><br>
+
+                <input type="checkbox" id="futebol" name="hobbies" value="futebol">
+                <label for="futebol">Futebol</label><br>
+
+                <input type="checkbox" id="artes" name="hobbies" value="artes">
+                <label for="artes">Artes</label><br>
+
+                <input type="checkbox" id="jogos" name="hobbies" value="jogos">
+                <label for="jogos">Jogos</label><br>
+
+                <input type="checkbox" id="cozinhar" name="hobbies" value="cozinhar">
+                <label for="cozinhar">Cozinhar</label>
+            </div>
+        </fieldset>
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" name="observacao"></textarea><br>
+
+        <div class="buttons">
+            <input type="submit" value="Salvar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Voltar" onclick="history.back()">
+</form>
 </body>
 
 </html>

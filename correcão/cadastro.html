@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>cadastro de ususario</h1>
+    <form>
+
+        <label for="nome">nome:</label><input type="text" name="nome" id="nome" /><br />
+        <label for="telefone">telefone:</label><input type="text" name="telefone" id="telefone" /><br />
+        <label for="email">email:</label><input type="text" name="email" id="email" /><br />
+        <label for="senha">senha:</label><input type="password" name="senha" id="senha" /><br />
+
+        <label for="">sexo:</label>
+
+        <input type="radio" name="sexo" id="masculino" id="m">
+        <label for="masculino">masculino</label>
+
+        <input type="radio" name="sexo" id="feminino" id="f">
+        <label for="feminino">feminino</label>
+        <br>
+
+        <label for="uf">uf:</label>
+        <select name="uf" id="uf">
+            <option valuer="">Selecione</option>
+            <option valuer="DF">distrito federal</option>
+            <option valuer="SP">sao paulo</option>
+            <option valuer="GO">goiania</option>
+            <option valuer="RJ">rio de janeiro</option>
+        </select>
+        <label for="cidade">cidade:</label>
+        <select name="cidade" id="cidade">
+            <option valuer="">Selecione</option>
+            <option valuer="1">distrito federal</option>
+            <option valuer="2">sao paulo</option>
+            <option valuer="3">goiania</option>
+            <option valuer="4">rio de janeiro</option>
+        </select>
+
+        <fieldset>
+            <legend>hobbies</legend>
+            <input type="checkbox" name="hobbies[]" id="musica" id="m">
+            <label for="musica">musica</label><br>
+
+            <input type="checkbox" name="hobbies[]" id="futibol" id="m">
+            <label for="futibol">futibol</label><br>
+
+            <input type="checkbox" name="hobbies[]" id="artes" id="m">
+            <label for="artes">artes</label><br>
+
+            <input type="checkbox" name="hobbies[]" id="jogos" id="m">
+            <label for="jogos">jogos</label><br>
+
+            <input type="checkbox" name="hobbies[]" id="cozinhar" id="m">
+            <label for="cozinhar">cozinhar</label><br>
+        </fieldset>
+
+        <label for="observacao">observacao:</label>
+        <textarea name="observacao" id="observacao"  cols = "50" rows = "5"></textarea><br>
+
+        <input type="submit" value="salvar">
+        <input type="reset" value="limpa">
+        <input type="button" value="voltar">
+
+
+    </form>
+
+</body>
+
+</html>
