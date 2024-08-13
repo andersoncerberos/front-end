@@ -1,0 +1,28 @@
+h2,
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2,
+img {
+    text-align: center;
+    border: 20px groove green;
+    background-color: rgb(14, 223, 14);
+}
+
+p {
+    color: red;
+}
+
+.destaque {
+    color: rgb(10, 10, 10);
+}
+
+#Principal {
+    color: blue;
+    font-size: 20px;
+    border: red solid 10px;
+    background-color: blueviolet;
+    padding: 10px;
+}
