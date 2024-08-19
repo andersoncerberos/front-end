@@ -4,3 +4,5 @@ sequencia
 n,n,n,y,y,n
 abre o vccode na pasta code <react> 
 executa o projeto-->npm run dev
+git config user.email""
+git config user.name""
