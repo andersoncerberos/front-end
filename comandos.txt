@@ -1,0 +1,6 @@
+ criar projeto com next.js ---> npx create-next-app@latest
+ atualiza o npm--> npm i -g npm
+sequencia
+n,n,n,y,y,n
+abre o vccode na pasta code <react> 
+executa o projeto-->npm run dev
