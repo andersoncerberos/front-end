@@ -4,5 +4,8 @@ sequencia
 n,n,n,y,y,n
 abre o vccode na pasta code <react> 
 executa o projeto-->npm run dev
-git config user.email""
-git config user.name""
+configuar o git--> git config user.email""
+configura o git--> git config user.name""
+instalar o react boot strap --> npm install react-bootstrap bootstrap 
+import 'bootstrap/dist/css/bootstrap.min.css';
+hierarquia laout -> page
