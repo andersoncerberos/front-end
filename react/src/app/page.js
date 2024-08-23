@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import Cabecalho from "./components/Cabacalho";
+import Cabecalho from "./components/Cabecalho";
 import Link from "next/link";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Button variant="danger"> clicke aqui</Button>{' '}
 
       <br></br><Link href="/fundamentos">pagina fundamentos</Link><br/>
-      <br></br><Link href="/cliente">pagina cliente</Link><br/>
+      <br></br><Link href="/clientes">pagina Clientes</Link><br/>
     </main>
   );
 }
