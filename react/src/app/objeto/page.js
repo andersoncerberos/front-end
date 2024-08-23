@@ -1,33 +1,24 @@
 'use client'
 
-import Pagina from "../components/Pagina"
+import Pagina from "../components/Pagina";
 
-export default function titulo() {
-
+export default function Objetos() {
 
     const carros = [
-        { marca: 'GM', modelo: 'corsa', cor: 'rosa', foto: '' },
-        { marca: 'GM', modelo: 'celta', cor: 'rosa', foto: '' },
-        { marca: 'GM', modelo: 'ferraria', cor: 'rosa', foto: '' },
-        { marca: 'GM', modelo: 'cobalt', cor: 'rosa', foto: '' },
-        { marca: 'GM', modelo: 'fusca', cor: 'rosa', foto: '' },
+        {marca: 'GM', modelo: 'Corsa', cor: 'Rosa', foto: ''}, 
+        {marca: 'GM', modelo: 'Celta', cor: 'Preto', foto: ''}, 
+        {marca: 'Ferrari', modelo: 'La Ferrari', cor: 'Vermelha', foto: ''}, 
+        {marca: 'VW', modelo: 'Fusca', cor: 'Prata', foto: ''}, 
+        {marca: 'GM', modelo: 'Cobalt', cor: 'Branco', foto: ''}, 
     ]
+
     return (
-        <>
-            <Pagina titulo="objetos">
+        <Pagina titulo="Objetos">
 
+            {carros.map(item => (
+                <p>{item.marca}</p>
+            ))}
 
-
-                {carros.map(item => (
-                    <p>{item.marca}</p>
-                ))}
-
-                <ul>
-                    {carros.map(item => (
-                        <li>{item}</li>
-                    ))}
-                </ul>
-            </Pagina>
-        </>
+        </Pagina>
     )
 }
