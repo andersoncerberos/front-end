@@ -1,6 +1,7 @@
 'use client'
 
 import Pagina from "@/app/components/Pagina";
+import Link from "next/link";
 
 export default function Array() {
 
@@ -9,15 +10,13 @@ export default function Array() {
     return (
         <>
             <Pagina titulo="pagina de array">
-
-
-
+            <br></br><Link href="/">pagina inicial</Link><br/>
                 {carros.map(item => (
                     <p>{item}</p>
                 ))}
 
                 <ul>
-                    {carros.map(item => (
+                    {pessoas.map(item => (
                         <li>{item}</li>
                     ))}
                 </ul>

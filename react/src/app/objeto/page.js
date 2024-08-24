@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import Pagina from "../components/Pagina";
 
 export default function Objetos() {
@@ -13,7 +14,9 @@ export default function Objetos() {
     ]
 
     return (
+        
         <Pagina titulo="Objetos">
+            <br></br><Link href="/">pagina inicial</Link><br/>
 
             {carros.map(item => (
                 <p>{item.marca}</p>

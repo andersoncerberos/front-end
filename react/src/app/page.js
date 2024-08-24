@@ -10,6 +10,9 @@ export default function Home() {
 
       <br></br><Link href="/fundamentos">pagina fundamentos</Link><br/>
       <br></br><Link href="/clientes">pagina Clientes</Link><br/>
+      <br></br><Link href="/array">pagina array</Link><br/>
+      <br></br><Link href="/objeto">pagina objetos</Link><br/>
+      <br></br><Link href="/carros">pagina de carros</Link><br/>
     </main>
   );
 }
