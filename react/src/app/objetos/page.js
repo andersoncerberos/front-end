@@ -1,9 +1,9 @@
 'use client'
 
 import Link from "next/link";
-import Pagina from "../components/Pagina";
+import Pagina from "@/app/components/Pagina";
 
-export default function Objetos() {
+export default function Page() {
 
     const carros = [
         {marca: 'GM', modelo: 'Corsa', cor: 'Rosa', foto: ''}, 
@@ -16,7 +16,7 @@ export default function Objetos() {
     return (
         
         <Pagina titulo="Objetos">
-            <br></br><Link href="/">pagina inicial</Link><br/>
+            <br></br><Link href="/objetos">pagina objetos</Link><br/>
 
             {carros.map(item => (
                 <p>{item.marca}</p>
