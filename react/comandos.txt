@@ -9,3 +9,4 @@ configura o git--> git config user.name""
 instalar o react boot strap --> npm install react-bootstrap bootstrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
 hierarquia laout -> page
+npm install axios --> fazer requisições rest 

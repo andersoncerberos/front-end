@@ -8,15 +8,10 @@ export default function Home() {
   return (
     <>
       <Pagina titulo='pagina inicial'>
-        <Cabecalho  sub="anderson carlos" />
+        <Cabecalho  sub="ANDERSON CARLOS " />
         <Button variant="danger"> clicke aqui</Button>{' '}
 
-        <br></br><Link href="/fundamentos">pagina fundamentos</Link><br />
-        <br></br><Link href="/clientes">pagina Clientes</Link><br />
-        <br></br><Link href="/array">pagina array</Link><br />
-        <br></br><Link href="/objeto">pagina objetos</Link><br />
-        <br></br><Link href="/carros">pagina de carros</Link><br />
-        <br></br><Link href="/nomes">pagina de nomes</Link><br />
+        
       </Pagina>
     </>
   );
